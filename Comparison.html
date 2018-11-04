@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        <title> Ride sharing analysis</title> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        
+        <link href="style.css" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+                <div class = "container-fluid">
+                    <a class ="navbar-brand" href="index.html">Pyber
+                    
+                        <button type = "button" class ="navbar-toggler" data-toggle = "collapse" data-target = "#MyNavbar">
+                            <span class ="navbar-toggler-icon"></span>
+                            
+                        </button>
+                        <!-- setting a logo for the nav bar-->
+                    <div class = "collapse navbar-collapse" id ="#MyNavbar">
+                        <ul class ="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                    <a class="nav-link" href = "index.html">Home</a>
+                            </li>
+                            <!--li class = "active"> <a href = "#">Home</a></li-->
+                            <li class="nav-item dropdown">
+                                <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Plots
+                                </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="figures.html">City type</a>
+                                        <a class="dropdown-item" href="figures2.html">Fares</a>
+                                        <a class="dropdown-item" href="figures 3.html">Drivers</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="figures4.html">Rides</a>
+                                    </div>
+        
+                            </li>
+                            <li>
+                                <a class="nav-link" href="data.html">Data</a>
+                            </li>
+                            <li>
+                                <a class="nav-link active" href="Comparison.html">Comparison</a>
+                            </li>
+                            
+                        </ul>
+                    
+                    </div>
+                </div>
+                </nav>
+        <main>
+            <div class="jumbotron">
+                    <div class ="container">
+                            <div class= "row">
+                                <div class="col-md-6">
+                                    <h2>Ride sharing by city type </h2>
+                                    <a href="figures.html"><img  class="img-responsive" src = "Matplot-Hw/analysis/Fig1.png" height="100%"  width="100%" > </a>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                        <h2>Ride sharing by fares </h2>
+                                    <a href="figures2.html"><img class="img-responsive" src = "Matplot-Hw/analysis/Fig2.png" height="100%"  width="100%" ></a>
+                                    
+                                </div>
+                                </div>
+                            
+                            <div class="row">
+                                <span class="border-top my-3"></span>
+                                <div class="col-md-6">
+                                        <h2>Ride sharing by total rides </h2>
+                                    <a href="figures 3.html"><img class="img-responsive" src = "Matplot-Hw/analysis/Fig3.png" height="100%"  width="100%" ></a>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                        <h2>Ride sharing by Driver count </h2>
+                                    <a href="figures4.html"><img class="img-responsive" src = "Matplot-Hw/analysis/Fig4.png" height="100%"  width="100%" ></a>
+                                        
+                                </div>
+                            
+                            </div>
+            
+                        </div>
+                    </main>
+            </div>
+        </main>
+    </body>
+    <footer class="container-fluid">
+            <p style="background-color:rgba(128, 128, 128, 0.562)"  ALIGN="center">Property of some bootcamp</p>
+        </footer>
+</html>

@@ -1,42 +1,109 @@
-<doctype !html>
-    <html>
-        <head>
-            <meta name= " Justin Agogbua">
-            <meta description = "Developer Bio">
-            <link rel="Stylesheet" type ="text/css " href="thestyles.css">
-        </head>
-        <body style="font-family:Verdana;">
-            <div style="background-color:#f1f1f1;padding:15px;">
-            <h2>Data Analytics Bootcamp</h2>
-            <p><b>Justin Agogbua</b></p>
-            </div>
-            <div style="overflow:auto">
-                <div class="menu">
-                <div class="menuitem">The Walk</div>
-                <div class="menuitem">Transport</div>
-                <div class="menuitem">History</div>
-                <div class="menuitem">Gallery</div>
-            </div>
-            <div class="main">
-                    <h2>Favorite Song</h2>
-                    <p>One of my alltime favorite songs.</p>
-                    <iframe width="420" height="315" src="https://www.youtube.com/watch?v=pMdeD3gafrk"></iframe>
-            </div>
-                
-            <div class="right">
-                <h2>What?</h2>
-                <p>Berkeley comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore. This is not TURE! </p>
-                <h2>Where?</h2>
-                <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
-                <h2>Price?</h2>
-                <p>The Walk is free!</p>
-            </div>
-            
-                
-                
-        <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by Hamed Nazari. Resize the browser window to see the content respond to the resizing.</div>
-        </body>
-                 
-    </html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        <title> Ride sharing analysis</title> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        
+        <link href="style.css" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class = "container-fluid">
+            <a class ="navbar-brand" href="index.html">Pyber
+         
+                <button type = "button" class ="navbar-toggler" data-toggle = "collapse" data-target = "#MyNavbar">
+                    <span class ="navbar-toggler-icon"></span>
+                   
+                </button>
+                <!-- setting a logo for the nav bar-->
+            <div class = "collapse navbar-collapse" id ="#MyNavbar">
+                <ul class ="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href = "index.html">Home</a>
+                    </li>
+                    <!--li class = "active"> <a href = "#">Home</a></li-->
+                    <li class="nav-item dropdown">
+                        <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="figures.html">City type</a>
+                                <a class="dropdown-item" href="figures2.html">Fares</a>
+                                <a class="dropdown-item" href="figures 3.html">Drivers</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="figures4.html">Rides</a>
+                            </div>
 
-</doctype>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="Comparison.html">Comparison</a>
+                    </li>
+                    
+                </ul>
+            
+            </div>
+        </div>
+        </nav>
+        <main role="main">
+            <div class = "jumbotron">
+                <div class = "container">
+                    <h1 class ="display-4">Pyber</h1>
+                    <div class = class="row">
+                            <div class= class="col-md-8">
+                                    <!--img class="col-md-4" src="Matplot-Hw/analysis/Fig1.png"-->
+                                    <img class="img-responsive" src="Ride-hailing.jpg" height="30%"  width="30%"  ALIGN="left">
+                            </div>
+                        
+                        <div class= class="col-md-4">
+                              <p class="text-justify" ALIGN="right"> The ride sharing bonanza continues! Seeing the success of notable players like Uber and Lyft, everyone wants to get into the ride sharing business but where do you start? The purpose of this project was to vizualize ride sharing data by joining ride data with city data to be able to see what city type generates the largest returns
+                              </br></br> We look at average fare prices vs total number of rides to see where our high price and high volume zones which could lead to us deciding to implement a  luxury line or discount codes. We also look at total fare,driver, and rides to see the distrabution between the city types.
+                                    </p>
+                        </div>
+                        
+                </div>
+
+                </div>
+            </div>
+            <div class ="container">
+                <div class= "row">
+                    <div class="col-md-6">
+                        <a href="figures.html"><img  class="img-responsive" src = "Matplot-Hw/analysis/Fig1.png" height="100%"  width="100%" ALIGN="left"> </a>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <a href="figures2.html">  <img class="img-responsive" src = "Matplot-Hw/analysis/Fig2.png" height="100%"  width="100%" ALIGN="left"></a>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <a href="figures 3.html"><img class="img-responsive" src = "Matplot-Hw/analysis/Fig3.png" height="100%"  width="100%" ALIGN="right"></a>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <a href="figures4.html"><img class="img-responsive" src = "Matplot-Hw/analysis/Fig4.png" height="100%"  width="100%" ALIGN="bottom"></a>
+                            
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer class="container-fluid">
+            <p style="background-color:rgba(128, 128, 128, 0.562)"  ALIGN="center">Property of some bootcamp</p>
+        </footer>
+
+        <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script-->
+    </body>
+</html>
